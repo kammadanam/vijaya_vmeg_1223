@@ -92,31 +92,117 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void addFirst(Student student) {
-		// Add your implementation here
-	}
+		int c=Integer.parseInt(br.readLine);
+		a[n-1]=c;
+		
+        for(i=0;i<=n;i++)
+		{
+			if(a[i]==null)
+			{
+				 throw IllegalArgumentException;
+			}
+		} 
+		}
 
 	@Override
-	public void addLast(Student student) {
+	public void addLast(Student student) 
+	{
+		int d=Integer.parseInt(br.readLine);
+				
+        for(i=0;i<=n;i++)
+		{
+			if(a[i]==a[d])
+			{
+				 a[i]==null;
+			}
+		} 
+		if(size(a[i])<0||size(a[i])>=n)
+		{
+            throw IllegalArgumentException;
+		}
+		}
+	
+		
 		// Add your implementation here
-	}
+	
 
 	@Override
 	public void add(Student student, int index) {
+		int b=Integer.parseInt(br.readLine);
+		a[0]=b;
+		for(i=0;i<=n;i++)
+		{
+			if(a[i]==null)
+			{
+				 throw IllegalArgumentException;
+			}
+		}
+		// Add your implementation here
+	}
 		// Add your implementation here
 	}
 
 	@Override
-	public void remove(int index) {
+	public void remove(int index) 
+	{
+		
+	int e=Integer.parseInt(br.readLine);
+	
+		for(i=0;i<=n;i++)
+		{
+			if(a[i]==e)
+			{
+				 a[i]=null;
+			}
+			else if{
+				System.out.println("student not exist");
+				
+			}
+            else if(a[i]==null)
+			{
+				 throw IllegalArgumentException;
+			}
+		}
 		// Add your implementation here
 	}
 
 	@Override
 	public void remove(Student student) {
+				
+	int f=Integer.parseInt(br.readLine);
+	
+		for(i=0;i<=n;i++)
+		{
+			if(a[i]!=a[f])
+			{
+				 a[i]=null;
+			}
+			
+            else if(a[i]==null)
+			{
+				 throw IllegalArgumentException;
+			}
+		}
+		
 		// Add your implementation here
 	}
 
 	@Override
 	public void removeFromIndex(int index) {
+		int g=Integer.parseInt(br.readLine);
+	
+		for(i=0;i<=n;i++)
+		{
+			if(a[i]!=g)
+			{
+				 a[i]=null;
+			}
+			
+            else if(a[i]==null)
+			{
+				 throw IllegalArgumentException;
+			}
+		}
 		// Add your implementation here
 	}
 
